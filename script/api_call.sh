@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ..
+#cd ..
 pwd
 ls
 bin/rails test test/controllers/main_requests_test.rb
