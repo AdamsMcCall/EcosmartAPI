@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ..
+#cd ..
 bin/rails test test/models/validity_test.rb
 ret=$?
 if [ $ret = 0 ]
