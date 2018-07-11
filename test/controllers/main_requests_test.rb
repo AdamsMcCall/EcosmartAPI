@@ -9,9 +9,9 @@ class MainRequests < ActiveSupport::TestCase
     res = req.get('/children')
     jsonreq = JSON.parse res.body
     jsondb = JSON.parse Child.all.to_json
-    puts jsonreq['children']
+    puts jsonreq['children'].to_s
     puts "========"
-    puts jsondb
+    puts jsondb.to_s
     assert_equal({}, JsonCompare.get_diff(jsonreq['children'], jsondb), "Children request doesn't match database")
   end
 
