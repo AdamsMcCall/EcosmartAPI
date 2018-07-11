@@ -30,4 +30,4 @@
 /config/master.key
 
 # Ignore useless files that nobody knows the use
-.rake_tasks~
+/.rake_tasks~
